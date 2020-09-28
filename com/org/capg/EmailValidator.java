@@ -6,8 +6,8 @@ import java.util.regex.Matcher;
 public class EmailValidator {	
 	public static void main(String[] args) {
 		System.out.println("Welcome to Email Validator");
-		Pattern p= Pattern.compile("(^[a-zA-Z0-9]+)");
-		Matcher m=p.matcher("krishna");
+		Pattern p= Pattern.compile("(^[a-zA-Z0-9]+)(@[a-zA-Z]+)");
+		Matcher m=p.matcher("krishna@lankala");
 		boolean b=m.matches();
 		if(b) {
 			System.out.println("Matches");
